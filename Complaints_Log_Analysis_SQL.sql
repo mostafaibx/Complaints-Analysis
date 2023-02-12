@@ -155,8 +155,11 @@ FROM t2
 WHERE financal_complaints.issue = t2.issue AND financal_complaints.company_public_response IS NULL
 
 
+
 ------------------------Aggregation------------------------
 -----------------------------------------------------------
+
+--Multivariate Non-graphical:
 
 ---checking the percentages of values of one column according to another
 
@@ -181,6 +184,4 @@ GROUP BY 1
  
 ..........
 
-
-       
  
