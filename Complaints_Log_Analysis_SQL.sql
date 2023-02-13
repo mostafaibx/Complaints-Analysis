@@ -184,4 +184,13 @@ GROUP BY 1
  
 ..........
 
+---Checking number of products caused issues per year
+
+SELECT date_trunc('year', date_sumbited) AS date, product, COUNT (*)
+FROM financal_complaints
+GROUP BY 1,2
+ORDER BY 1
+
+
+
  
