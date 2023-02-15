@@ -10,6 +10,6 @@ In this project we perform analysis and visualization on a dataset from 'Real Wo
    - Using tableau for visualization.
    
    
-Dashboard Link: 
+Dashboard Link: https://public.tableau.com/views/ComplaintsOverview_16764652596300/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link
    
 Dataset Link: https://data.world/markbradbourne/rwfd-real-world-fake-data/workspace/file?filename=Financial+Consumer+Complaints.csv
