@@ -7,23 +7,44 @@
 ---creating a table in the database to import the csv file
 
 CREATE TABLE Financal_complaints (
-              Complaint_ID CHAR (50), Date_Sumbited CHAR (50), Product	TEXT,
-	            Sub_product	TEXT, Issue TEXT, Sub_issue	TEXT,
-              Company_public_response TEXT, Company	TEXT, State	TEXT, 
-              ZIP_code TEXT, Tags TEXT, Consumer_consent_provided TEXT,
-	            Submitted_via	TEXT, Date_received	CHAR (50),
-	            Company_response_to_consumer TEXT,
-              Timely_response	TEXT, Consumer_disputed TEXT
+		Complaint_ID CHAR (50),
+		Date_Sumbited CHAR (50), 
+		Product	TEXT,
+		Sub_product	TEXT,
+		Issue TEXT,
+		Sub_issue	TEXT,
+		Company_public_response TEXT,
+		Company	TEXT,
+		State	TEXT,
+		ZIP_code TEXT,
+		Tags TEXT,
+		Consumer_consent_provided TEXT,
+		Submitted_via	TEXT,
+		Date_received	CHAR (50),
+		Company_response_to_consumer TEXT,
+		Timely_response	TEXT,
+		Consumer_disputed TEXT
                                    );
                                    
                                    
 ---Inserting data from CSV file
 
  copy public.financal_complaints (
-               Complaint_ID,	Date_Sumbited,	Product, Sub_product,	 Issue,	Sub_issue,	
-               Company_public_response,	 Company,  State,	ZIP_code,	Tags,	
-               Consumer_consent_provided, Submitted_via,	Date_Received, 
-               Company_response_to_consumer, Timely_response,	Consumer_disputed
+               Complaint_ID,
+	 	Date_Sumbited,	Product,
+	 	Sub_product,
+	 	Issue,
+	 	Sub_issue,
+	 	Company_public_response,
+	 	Company,  State,
+	 	ZIP_code,
+	 	Tags,	
+	 	Consumer_consent_provided,
+	 	Submitted_via,
+	 	Date_Received,
+	 	Company_response_to_consumer,
+	 	Timely_response,
+	 	Consumer_disputed
 ) FROM 'D:/Financial Consumer Complaints.csv' DELIMITER ',' CSV  HEADER QUOTE '\' ESCAPE ';
 
 
